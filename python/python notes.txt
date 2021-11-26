@@ -1,0 +1,60 @@
+x1 = 5.12324567
+print("the vlaue of x is %.2f" %x1)##dont put  comma before %x
+
+class contains attributes and methods
+methods need parameter (self)
+fnx has variable
+
+the work of a default constructor (__init__) is to create a attribute and assign a default value to that attribute 
+constructor is a special method. it is special because its name cannot be changed.
+it is a descipline to not to add logic in __init__      
+
+
+
+class Sq:
+    def __init__(self, no):
+        self.n = no
+
+    def sqr(self):
+        return (self.n * self.n)
+
+sq1 = Sq(9)
+sq2 = Sq(10)
+
+
+print("the square of", sq1.n, "is = ", sq1.sqr())
+print("the square of", sq2.n, "is = ", sq2.sqr())
+
+
+encapsulation :- the process of hiding the attribute from the object is called encapsulation
+
+
+getter method
+
+def getSqr(self):                                        not a getter method as it returns a diff value 
+    return(self.__no*self.__no)
+
+def getNo(self):
+    return(self.__no)                                    it is a getter method as it returns a value of a attribute
+
+inheritance is a process in which the attributes are inherited from one class to another. it is one directional(parent class cannot inherit from child class)
+old class can be called - super class,  base class,    parent class
+new class can be called - sub class,    derived class, child class
+
+the arrow to show the inheritance goes from new class to old class(UML-Unified modelling Language is used to show case the oop-based logics, procedural languages are depicted using normal flow charts)
+
+types of inheritance
+1) single inheritance
+- it consists of only 2 class(base and derived class)
+
+in inheritance if in the parent and child, two methods have same name then at runtime inheritance is blocked so that childs object can access its own method instead of parents method, this is called runtime polymorphism  
+polymorphism = runtime polymorphism = dynamic binding = late binding = method overriding // method overloading(it is compile time, as it isnt used in python as it is a interpreted language)
+
+exception handling:
+
+./ an exception can be defined as an unusal condition in a program resulting in the interruption in the flow of the program
+./ whenever an exception occurs , the program stops the execution, and thus furthur code is snot executed
+./ therefore, an exception is the run-time errors that are unable to handle to python script
+./ an exception is a python object that represents an error 
+
+
